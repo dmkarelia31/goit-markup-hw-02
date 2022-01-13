@@ -1,13 +1,12 @@
 :root {
   --accent-bg-color: #2196f3;
-  --accent-text-color: #2196f3;
   --main-text-color: #212121;
   --accent-text-color: #fff;
   --main-bg-color: #fff;
   --main-logo-color: #2196f3;
 }
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #212121;
   font-family: "Roboto", sans-serif;
 }
@@ -15,8 +14,8 @@ body {
 /* Шапка: логотип, меню, контакты */
 .header-logo {
   font-family: "Raleway";
+  font-weight: 700;
   font-style: normal;
-  font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -33,6 +32,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
+
   color: var(--main-text-color);
   list-style: none;
 }
@@ -46,17 +46,86 @@ body {
 }
 
 .contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 1.14;
-  color: #757575;
   list-style: none;
   display: flex;
 }
 
-.contact-item {
+.contact :hover,
+.contact :focus {
+  color: #2196f3;
+}
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
   text-decoration: none;
+}
+
+/* Герой */
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+}
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-btn {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.hero-btn.text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+/* Features */
+
+.features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.features p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/* Чем мы занимаемся */
+.works-title {
+  text-align: center;
+}
+.works-img {
+  list-style: none;
+  display: flex;
+}
+
+/* Команда */
+.team {
+  background: #f5f4fa;
+}
+.team-title {
+  text-align: center;
+}
+.team-person {
+  list-style: none;
+  display: flex;
 }
 
 /* Секция фильров */
@@ -86,10 +155,19 @@ body {
   color: var(--accent-text-color);
 }
 
+.contact-item:hover {
+  background-color: var(--accent-bg-color);
+  color: var(--accent-text-color);
+}
+.contact-item :focus {
+  background-color: var(--accent-bg-color);
+  color: var(--accent-text-color);
+}
+
 /* Примеры работ */
 
 .samples-section li h3 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -108,8 +186,7 @@ body {
 
 .footer-logo {
   font-family: "Raleway";
-  font-weight: bold;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
