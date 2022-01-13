@@ -1,1 +1,143 @@
+:root {
+  --accent-bg-color: #2196f3;
+  --accent-text-color: #2196f3;
+  --main-text-color: #212121;
+  --accent-text-color: #fff;
+  --main-bg-color: #fff;
+  --main-logo-color: #2196f3;
+}
+body {
+  background-color: #ffffff;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+}
 
+/* Шапка: логотип, меню, контакты */
+.header-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--main-logo-color);
+}
+.header-logo-color {
+  color: #212121;
+}
+
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  color: var(--main-text-color);
+  list-style: none;
+}
+.nav-btn {
+  text-decoration: none;
+}
+
+.nav-list :hover,
+.nav-list :focus {
+  color: #2196f3;
+}
+
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.14;
+  color: #757575;
+  list-style: none;
+  display: flex;
+}
+
+.contact-item {
+  text-decoration: none;
+}
+
+/* Секция фильров */
+.filter-list {
+  background: #f5f4fa;
+  border-radius: 4px;
+  list-style: none;
+  display: flex;
+}
+
+.filter-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.filter-list :hover {
+  background-color: var(--accent-bg-color);
+  color: var(--accent-text-color);
+}
+.filter-list :focus {
+  background-color: var(--accent-bg-color);
+  color: var(--accent-text-color);
+}
+
+/* Примеры работ */
+
+.samples-section li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.samples-section li p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-logo-color);
+  text-decoration: none;
+}
+.footer-logo-color {
+  color: #fff;
+}
+
+.footer-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-contact {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer-item {
+  list-style: none;
+}

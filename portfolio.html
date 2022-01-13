@@ -5,43 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet" />
 </head>
 
 
 <!-- Шапка: логотип, меню, контакты -->
 <header>
-    <a href="/index.html">WebStudio</a>
-    <nav>
-        <ul>
-            <li><a href="./index.html" rel="noopener noreferrer nofollow">Студия</a> </li>
-            <li><a href="">Портфолио</a> </li>
-            <li><a href="">Контакты</a> </li>
+    <a class="header-logo" href="/index.html">Web<span class="header-logo-color">Studio</span></a>
+    <nav class="header-nav">
+        <ul class="nav-list">
+            <li><a class="nav-btn" href="./index.html" rel="noopener noreferrer nofollow">Студия</a> </li>
+            <li><a class="nav-btn" href="">Портфолио</a> </li>
+            <li><a class="nav-btn" href="">Контакты</a> </li>
         </ul>
     </nav>
 
-    <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <ul class="contact">
+        <li><a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="contact-item" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
 </header>
 
 <!-- Герой -->
-<main>
+<main> 
     <!-- Секция фильров -->
     <section> 
-    <ul>
-        <li>
-            <button type="button">Все</button>
-            <button type="button">Веб-сайты</button>
-            <button type="button">Приложения</button>
-            <button type="button">Дизайн</button>
-            <button type="button">Маркетинг</button>
-        </li>
+    <h1>Портфолио</h1>
+        <!-- этим кнопкам дать фон и цвет текста в обычном стостоянии + в состоянии hover/focus  -->
+    <ul class="filter-list">
+        <li><button class="filter-item" type="button">Все</button></li>  
+        <li><button class="filter-item" type="button">Веб-сайты</button></li>      
+        <li><button class="filter-item" type="button">Приложения</button></li>      
+        <li><button class="filter-item" type="button">Дизайн</button></li>      
+        <li><button class="filter-item" type="button">Маркетинг</button></li>   
     </ul>
     </section>
 
+    
     <!-- Примеры работ -->
-    <section>
+    <section class="samples-section">
         <ul>
             <li>
                 <img src="./images/sample1.jpg" alt="пример разработки веб сайта" width="370">
@@ -97,19 +102,19 @@
 
 <!-- Footer -->
 
-<Footer>
-    <a href="/index.html">WebStudio</a>
+<Footer class="footer">
+    <a class="footer-logo" href="/index.html">Web<span class="footer-logo-color">Studio</span></a>
     <address>
-        <ul>
+        <ul class="footer-item">
             <li>
-                <a href="https://goo.gl/maps/yusCDUmG67zQRd1Q9" target="_blank" rel="noopener noreferrer nofollow">г.
+                <a class="footer-address" href="https://goo.gl/maps/yusCDUmG67zQRd1Q9" target="_blank" rel="noopener noreferrer nofollow">г.
                     Киев, пр-т Леси Украинки, 26</a>
             </li>
             <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+                <a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
         </ul>
     </address>
