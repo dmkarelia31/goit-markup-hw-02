@@ -91,7 +91,9 @@ body {
 }
 
 /* Features */
-
+.features li {
+  list-style: none;
+}
 .features h3 {
   font-weight: 700;
   font-size: 14px;
@@ -177,6 +179,11 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.sample-item {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Footer */
