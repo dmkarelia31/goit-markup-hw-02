@@ -93,6 +93,9 @@ body {
 /* Features */
 .features li {
   list-style: none;
+
+}
+
 }
 .features h3 {
   font-weight: 700;
@@ -121,6 +124,7 @@ body {
 /* Команда */
 .team {
   background: #f5f4fa;
+  text-align: center;
 }
 .team-title {
   text-align: center;
@@ -129,6 +133,9 @@ body {
   list-style: none;
   display: flex;
 }
+
+
+
 
 /* Секция фильров */
 .filter-list {
@@ -157,33 +164,30 @@ body {
   color: var(--accent-text-color);
 }
 
-.contact-item:hover {
-  background-color: var(--accent-bg-color);
-  color: var(--accent-text-color);
-}
-.contact-item :focus {
-  background-color: var(--accent-bg-color);
-  color: var(--accent-text-color);
-}
-
 /* Примеры работ */
 
-.samples-section li h3 {
+.samples-section li h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: center;
 }
 .samples-section li p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
 }
 .sample-item {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+.sample-link {
+  text-decoration: none;
 }
 
 /* Footer */
