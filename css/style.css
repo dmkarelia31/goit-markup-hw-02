@@ -27,23 +27,28 @@ body {
 }
 
 .nav-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  display: flex;
+font-weight: 500;
+font-size: 14px;
+line-height: 1,14;
+letter-spacing: 0.02em;
 
-  color: var(--main-text-color);
-  list-style: none;
+list-style: none;
 }
 .nav-btn {
   text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.nav-list .nav-btn.current {
+  color: #2196f3;
 }
 
 .nav-list :hover,
 .nav-list :focus {
   color: #2196f3;
 }
+
+
 
 .contact {
   list-style: none;
@@ -91,19 +96,20 @@ body {
 }
 
 /* Features */
-.features li {
+.features li h3 {
   list-style: none;
+  text-transform: uppercase;
+
 
 }
 
 }
-.features h3 {
-  font-weight: 700;
+.features-title {
+  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-text-color);
+  color: #212121;
 }
 
 .features p {
@@ -114,8 +120,13 @@ body {
 }
 /* Чем мы занимаемся */
 .works-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1,16;
   text-align: center;
-}
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  }
 .works-img {
   list-style: none;
   display: flex;
@@ -127,11 +138,36 @@ body {
   text-align: center;
 }
 .team-title {
-  text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-text-color);
 }
 .team-person {
   list-style: none;
   display: flex;
+}
+
+.team-person h3 {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}   
+
+.team-person p {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 
@@ -146,6 +182,7 @@ body {
 }
 
 .filter-item {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -153,6 +190,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   cursor: pointer;
+  border: 1px solid black;
 }
 
 .filter-list :hover {
@@ -171,14 +209,16 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-align: center;
+  text-align: left;
+  color: #212121;
+
 }
 .samples-section li p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
-  text-align: center;
+  text-align: left;
 }
 .sample-item {
   list-style: none;
