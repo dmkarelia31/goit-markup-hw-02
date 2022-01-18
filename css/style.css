@@ -5,6 +5,35 @@
   --main-bg-color: #fff;
   --main-logo-color: #2196f3;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid green;
+
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 body {
   background-color: #fff;
   color: #212121;
@@ -12,6 +41,13 @@ body {
 }
 
 /* Шапка: логотип, меню, контакты */
+
+.header {
+  
+  padding-top: 35px;
+  padding-bottom: 29px;
+}
+
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -31,7 +67,6 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1,14;
 letter-spacing: 0.02em;
-
 list-style: none;
 }
 .nav-btn {
@@ -52,7 +87,7 @@ list-style: none;
 
 .contact {
   list-style: none;
-  display: flex;
+display: flex;
 }
 
 .contact :hover,
@@ -69,11 +104,15 @@ list-style: none;
 }
 
 /* Герой */
+
+
 .hero {
-  text-align: center;
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-text {
+  width: 696px;
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -81,8 +120,11 @@ list-style: none;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  
+
 }
 .hero-btn {
+ 
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -96,14 +138,18 @@ list-style: none;
 }
 
 /* Features */
+
+.features{
+  
+}
 .features li h3 {
   list-style: none;
   text-transform: uppercase;
-
-
 }
 
 }
+
+
 .features-title {
   font-weight: bold;
   font-size: 14px;
@@ -118,6 +164,8 @@ list-style: none;
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+
 /* Чем мы занимаемся */
 .works-title {
   font-weight: 700;
@@ -191,6 +239,9 @@ color: var(--main-text-color);
   color: var(--main-text-color);
   cursor: pointer;
   border: 1px solid black;
+  border-radius: 4px;
+  margin-right: 3px;
+  margin-bottom: 5px;
 }
 
 .filter-list :hover {
